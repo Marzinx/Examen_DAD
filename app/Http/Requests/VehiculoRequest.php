@@ -11,7 +11,7 @@ class VehiculoRequest extends FormRequest
      */
     public function authorize(): bool
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,7 +24,7 @@ class VehiculoRequest extends FormRequest
         switch ($this->method()) {
             case 'POST':
                 return [
-                    'placa' => 'required|unique:entrada|max:70',
+                    'placa' => 'required|unique:vehiculo|max:70',
                     'modelo' => 'max:70',
                     'descripcion' => 'max:70',
                 ];
@@ -32,7 +32,7 @@ class VehiculoRequest extends FormRequest
             case 'PATCH':
             {
                 return [
-                    'placa' => 'required|unique:entrada,placa,'.$this->get('id').'|max:70',
+                    'placa' => 'required|unique:vehiculo,placa,'.$this->get('id').'|max:70',
                     'modelo' => 'max:70',
                     'descripcion' => 'max:70',
                 ];

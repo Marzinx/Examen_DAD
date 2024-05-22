@@ -140,15 +140,15 @@
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a id="liCategoria" href="/categoria" class="nav-link">
+                  <a id="liEntrada" href="/entrada" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
-                    <p>Categorías</p>
+                    <p>Entradas</p>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a id="liProducto" href="/productos" class="nav-link">
+                  <a id="liVehiculo" href="/vehiculo" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
-                    <p>Productos</p>
+                    <p>Vehiculos</p>
                   </a>
                 </li>
               </ul>

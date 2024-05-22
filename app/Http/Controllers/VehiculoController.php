@@ -15,7 +15,7 @@ class VehiculoController extends Controller
     {
         //dd($request);
         $texto = trim($request->get('texto'));
-        $registros=Vehiculo::where('mdelo','like', '%'. $texto . '%')->paginate(10);
+        $registros=Vehiculo::where('placa','like', '%'. $texto . '%')->paginate(10);
         return view('vehiculo.index', compact('registros', 'texto'));
     }
 

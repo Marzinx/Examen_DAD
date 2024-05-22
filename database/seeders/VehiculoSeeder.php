@@ -17,9 +17,9 @@ class VehiculoSeeder extends Seeder
     {
         for ($i = 1; $i <= 200; $i++){
             Vehiculo::create([
-                'placa' => 'Entrada' . Str::random(5),
+                'placa' => 'Vehiculo' . Str::random(5),
                 'modelo' => 'Modelo del Auto' . $i,
-                'propietario' => 'Vehiculo' . Str::random(8),
+                'propietario' => 'Propietario' . $i,
                 'activo' => rand(0, 1) == 1 ? true : false,
             ]);
         }
